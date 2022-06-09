@@ -1,0 +1,28 @@
+.header {
+  background: linear-gradient(287.15deg, #450e4b 0%, 
+  #3c0c41 24.48%, rgba(207, 0, 99, 0) 100%),
+    linear-gradient(0deg, #cf0063, #cf0063);
+  width: 100vw;
+  
+
+  &__content {
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 0;
+    box-sizing: border-box;
+
+    @include onDesktop {
+      padding: 20px 0;
+    }
+
+    @include onSmallScreen {
+      padding: 15px 0 35px;
+    }
+  }
+
+  &__top-actions {
+    margin-bottom: 80px;
+  }
+}

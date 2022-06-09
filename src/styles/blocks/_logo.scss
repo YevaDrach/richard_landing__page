@@ -1,0 +1,13 @@
+.logo {
+  &__image {
+    height: 43px;
+    
+    @include onMobile {
+      height: 35px;
+    }
+
+    @include onSmallScreen {
+      height: 30px;
+    }
+  }
+}
