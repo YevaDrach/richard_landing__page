@@ -21,14 +21,11 @@
   &__item-link {
     color: #fff;
     padding: 20px 0;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 125%;
     font-weight: 400;
     white-space: nowrap;
     text-decoration: none;
-
-    @include onMobile {
-      font-size: 17px;
-    }
 
     @include onSmallScreen {
       font-size: 12px;

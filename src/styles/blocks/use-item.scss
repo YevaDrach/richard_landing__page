@@ -1,13 +1,7 @@
 .use-item {
-  overflow: hidden;
   display: flex;
   align-items: center;
-
-  &--second {
-    display: grid;
-    grid-template-columns: 45% auto;
-  }
-
+  
   @include onSmallScreen {
     display: block;
     text-align: center;
@@ -18,98 +12,75 @@
     text-align: center;
   }
 
+  &--second {
+    @include onSmallScreen {
+      display: grid;
+      justify-content: center;
+    }
+
+    @include onSuperSmallScreen {
+      display: grid;
+      justify-content: center;
+    }
+  }
+
   &__info {
     margin-right: 180px;
-
-    &--second {
-      margin: 0 0 0 100px;
-      order: 2;
-    }
 
     @include onMobile {
       margin-right: 120px;
     }
 
     @include onSmallScreen {
-      margin: 0 0 50px;
+      margin-right: 0;
+      margin-bottom: 60px;
     }
 
     @include onSuperSmallScreen {
-      margin: 0 0 50px;
-    }
-  }
-
-  &__subtitle {
-    margin-bottom: 30px;
-
-    @include onSmallScreen {
-      margin-bottom: 15px;
+      margin-right: 0;
+      margin-bottom: 50px;
     }
 
-    @include onSuperSmallScreen {
-      margin-bottom: 13px;
-    }
-  }
+    &--second {
+      margin-right: 0;
 
-  &__title {
-    font-size: 38px;
-    font-weight: 400;
-    line-height: 48px;
-    margin: 0;
-    margin-bottom: 20px;
-    white-space: nowrap;
+      @include onSmallScreen {
+        order: 1;
+      }
 
-    @include onMobile {
-      font-size: 30px;
-    }
-
-    @include onSmallScreen {
-      font-size: 25px;
-      margin-bottom: 15px;
-    }
-
-    @include onSuperSmallScreen {
-      font-size: 25px;
-      margin-bottom: 15px;
-    }
-  }
-
-  &__text {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    margin: 0;
-    color: #6b6b6b;
-    white-space: nowrap;
-
-    @include onSmallScreen {
-      font-size: 13px;
-    }
-
-    @include onSuperSmallScreen {
-      font-size: 13px;
+      @include onSuperSmallScreen {
+        order: 1;
+      }
     }
   }
 
   &__image-container {
     &--second {
-      order: 1;
-      @include onDesktop {
-        margin-right: 180px;
-      }
-      
+      margin-right: 180px;
+
       @include onMobile {
-        margin-right: 180px;
+        margin-right: 40px;
+      }
+
+      @include onSmallScreen {
+        margin-right: 0;
+        order: 2;
+      }
+    
+      @include onSuperSmallScreen {
+        margin-right: 0;
+        order: 2;
       }
     }
 
     @include onMobile {
-      height: 450px;
+      height: 350px;
     }
 
     @include onSmallScreen {
-      height: 350px;
+      height: 300px;
     }
+
     @include onSuperSmallScreen {
       height: 270px;
     }

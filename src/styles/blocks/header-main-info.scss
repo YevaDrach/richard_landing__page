@@ -62,7 +62,7 @@
   
   &__subtitle {
     font-size: 30px;
-    line-height: 44px;
+    line-height: 146%;
     font-weight: 400;
     color: #fff;
     margin: 0;
@@ -88,7 +88,7 @@
     height: 650px;
 
     @include onMobile {
-      height: 500px;
+      height: 400px;
     }
 
     @include onSmallScreen {

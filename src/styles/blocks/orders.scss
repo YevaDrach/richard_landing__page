@@ -26,24 +26,10 @@
     }
   }
 
-  &__subtitle {
-    margin-bottom: 30px;
-
-    @include onSmallScreen {
-      font-size: 9px;
-      margin-bottom: 12px;
-    }
-
-    @include onSuperSmallScreen {
-      font-size: 9px;
-      margin-bottom: 12px;
-    }
-  }
-
   &__text {
     font-size: 38px;
     font-weight: 400;
-    line-height: 48px;
+    line-height: 126%;
     color: #fff;
 
     margin: 0;
@@ -84,7 +70,6 @@
   }
 
   &__image {
-    // width: 100%;
     object-fit: cover;
     height: 100%;
   }

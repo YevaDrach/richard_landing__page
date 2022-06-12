@@ -1,18 +1,17 @@
-.how-to-use {
+.about {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 
   &__item:not(:last-child) {
     margin-bottom: 160px;
 
     @include onSmallScreen {
-      margin-bottom: 120px;
+      margin-bottom: 60px;
     }
 
     @include onSuperSmallScreen {
-      margin-bottom: 80px;
+      margin-bottom: 60px;
     }
   }
 }
