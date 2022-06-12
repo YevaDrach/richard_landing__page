@@ -1,0 +1,32 @@
+.menu {
+  display: flex;
+  
+  &__item {
+    list-style: none;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+
+    @include onSmallScreen {
+      margin-right: 12px;
+    }
+  }
+
+  &__item-link {
+    color: #fff;
+    padding: 20px 0;
+    line-height: 20px;
+    font-weight: 400;
+    white-space: nowrap;
+    text-decoration: none;
+
+    @include onMobile {
+      font-size: 20px;
+    }
+
+    @include onSmallScreen {
+      font-size: 12px;
+    }
+  }
+}

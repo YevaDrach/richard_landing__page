@@ -1,0 +1,17 @@
+.page {
+  font-family: "Gothic A1", sans-serif;
+  background: #e5e5e5;
+  font-size: 16px;
+  font-weight: 400;
+  box-sizing: border-box;
+  
+  scroll-behavior: smooth;
+
+  &__body {
+    margin: 0;
+  }
+
+  &__section {
+    margin-bottom: 160px;
+  }
+}

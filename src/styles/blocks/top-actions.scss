@@ -1,0 +1,17 @@
+.top-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 150px;
+  box-sizing: border-box;
+  width: 100%;
+
+  @include onMobile {
+    padding: 0 80px;
+  }
+
+  @include onSmallScreen {
+    width: max-content;
+    padding: 0 20px;
+  }
+}
