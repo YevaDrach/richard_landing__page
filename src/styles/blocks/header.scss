@@ -16,7 +16,16 @@
       padding: 20px 0;
     }
 
+    @include onMobile {
+      height: max-content;
+    }
+
     @include onSmallScreen {
+      height: max-content;
+      padding: 15px 0 35px;
+    }
+
+    @include onSuperSmallScreen {
       height: max-content;
       padding: 15px 0 35px;
     }
@@ -27,6 +36,10 @@
     
     @include onSmallScreen {
       margin-bottom: 50px;
+    }
+
+    @include onSuperSmallScreen {
+      margin-bottom: 30px;
     }
   }
 }

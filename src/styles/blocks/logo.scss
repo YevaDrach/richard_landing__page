@@ -9,5 +9,9 @@
     @include onSmallScreen {
       height: 22px;
     }
+
+    @include onSuperSmallScreen {
+      height: 20px;
+    }
   }
 }

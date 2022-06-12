@@ -23,4 +23,9 @@
     height: 50px;
     font-size: 17px;
   }
+
+  @include onSuperSmallScreen {
+    height: 40px;
+    font-size: 13px;
+  }
 }

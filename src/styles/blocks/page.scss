@@ -1,9 +1,10 @@
 .page {
   font-family: "Gothic A1", sans-serif;
-  background: #e5e5e5;
+  background: #fff;
   font-size: 16px;
   font-weight: 400;
   box-sizing: border-box;
+  overflow-x: hidden;
   
   scroll-behavior: smooth;
 
@@ -11,7 +12,27 @@
     margin: 0;
   }
 
+  &__orders {
+    margin-bottom: 80px;
+
+    @include onSmallScreen {
+      margin-bottom: 50px;
+    }
+
+    @include onSmallScreen {
+      margin-bottom: 50px;
+    }
+  }
+
   &__section {
     margin-bottom: 160px;
+
+    @include onSmallScreen {
+      margin-bottom: 100px;
+    }
+
+    @include onSmallScreen {
+      margin-bottom: 70px;
+    }
   }
 }

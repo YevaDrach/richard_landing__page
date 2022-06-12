@@ -1,5 +1,6 @@
 .menu {
   display: flex;
+  padding: 0;
   
   &__item {
     list-style: none;
@@ -9,6 +10,10 @@
     margin-right: 30px;
 
     @include onSmallScreen {
+      margin-right: 12px;
+    }
+
+    @include onSuperSmallScreen {
       margin-right: 12px;
     }
   }
@@ -22,10 +27,14 @@
     text-decoration: none;
 
     @include onMobile {
-      font-size: 20px;
+      font-size: 17px;
     }
 
     @include onSmallScreen {
+      font-size: 12px;
+    }
+
+    @include onSuperSmallScreen {
       font-size: 12px;
     }
   }

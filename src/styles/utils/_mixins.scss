@@ -5,8 +5,14 @@
   }
 }
 
+@mixin onSuperSmallScreen {
+  @media (max-width: 380px) {
+    @content;
+  }
+}
+
 @mixin onSmallScreen {
-  @media (max-width: 700px) {
+  @media (max-width: 700px) and (min-width: 380px) {
     @content;
   }
 }
@@ -18,7 +24,7 @@
 }
 
 @mixin onMobile {
-  @media (max-width: 1000px) and (min-width: 700px) {
+  @media (max-width: 1029px) and (min-width: 700px) {
     @content;
   }
 }
