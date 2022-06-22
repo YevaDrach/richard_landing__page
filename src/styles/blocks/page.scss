@@ -3,6 +3,8 @@
   background: #fff;
   font-size: 16px;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
   
@@ -27,12 +29,47 @@
   &__section {
     margin-bottom: 160px;
 
+    @include onMobile {
+      margin-bottom: 100px;
+    }
+
     @include onSmallScreen {
       margin-bottom: 100px;
     }
 
     @include onSuperSmallScreen {
       margin-bottom: 80px;
+    }
+  }
+
+  &__quote {
+    margin-bottom: 130px;
+
+    @include onMobile {
+      margin-bottom: 90px;
+    }
+
+    @include onSmallScreen {
+      margin-bottom: 80px;
+    }
+
+    @include onSuperSmallScreen {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__partners {
+    margin-bottom: 120px;
+
+    @include onMobile {
+      margin-bottom: 80px;
+    }
+
+    @include onSmallScreen {
+      margin-bottom: 50px;
+    }
+    @include onSuperSmallScreen {
+      margin-bottom: 30px;
     }
   }
 }

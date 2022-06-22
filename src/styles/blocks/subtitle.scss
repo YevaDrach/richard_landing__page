@@ -27,7 +27,7 @@
     white-space: nowrap;
     text-transform: none;
     margin: 0;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 
     @include onMobile {
       font-size: 25px;
@@ -49,6 +49,7 @@
     line-height: 187%;
     color: #6b6b6b;
     white-space: nowrap;
+
     text-transform: none;
     margin: 0;
     letter-spacing: 0;

@@ -1,17 +1,16 @@
 .about-item {
   display: flex;
   justify-content: center;
+  align-items: center;
 
   @include onSmallScreen {
     display: grid;
-    grid-template-rows: 50% auto;
-    justify-items: left;
+    justify-content: center;
     align-items: center;
   }
 
   @include onSuperSmallScreen {
     display: grid;
-    grid-template-rows: 50% auto;
     justify-items: left;
     align-items: center;
   }
@@ -41,7 +40,9 @@
   }
 
   &__image-container {
-    margin-right: 60px;
+    &--second {
+      margin-right: 60px;
+    }
 
     @include onMobile {
       height: 250px;

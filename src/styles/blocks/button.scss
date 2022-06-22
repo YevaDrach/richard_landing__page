@@ -16,15 +16,17 @@
   cursor: pointer;
 
   @include onMobile {
-    font-size: 20px;
-  }
-
-  @include onSmallScreen {
-    height: 50px;
     font-size: 17px;
   }
 
+  @include onSmallScreen {
+    width: 130px;
+    height: 50px;
+    font-size: 15px;
+  }
+
   @include onSuperSmallScreen {
+    width: 130px;
     height: 40px;
     font-size: 13px;
   }
