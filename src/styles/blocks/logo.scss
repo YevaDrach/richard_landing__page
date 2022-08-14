@@ -1,20 +1,24 @@
 .logo {
   display: block;
+}
 
-  &__image {
-    height: 43px;
-    
-    @include onMobile {
-      height: 35px;
-    }
+.logo-image {
+  height: 43px;
+  
+  @include onMobile {
+    height: 35px;
+  }
 
-    @include onSmallScreen {
-      height: 22px;
-    }
+  @include onSmallScreen {
+    height: 22px;
+  }
 
-    @include onSuperSmallScreen {
-      height: 25px;
-      margin-right: 20px;
-    }
+  @include onSuperSmallScreen {
+    height: 25px;
+    margin-right: 20px;
+  }
+
+  &--side-menu {
+    margin-right: 0;
   }
 }

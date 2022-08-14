@@ -19,6 +19,14 @@
     color: #6b6b6b;
     white-space: nowrap;
 
+    @include onDesktop {
+      font-size: 20px;
+    }
+
+    @include onMobile {
+      font-size: 15px;
+    }
+
     @include onSmallScreen {
       padding: 8px 6px;
     }

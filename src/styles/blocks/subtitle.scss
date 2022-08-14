@@ -8,6 +8,10 @@
   margin: 0;
   margin-bottom: 30px;
 
+  @include onDesktop {
+    font-size: 17px;
+  }
+
   @include onSmallScreen {
     margin-bottom: 12px;
     font-size: 9px;
@@ -53,6 +57,10 @@
     text-transform: none;
     margin: 0;
     letter-spacing: 0;
+
+    @include onDesktop {
+      font-size: 18px;
+    }
 
     @include onMobile {
       font-size: 14px;

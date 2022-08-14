@@ -11,96 +11,111 @@
   </head>
   <body class="page__body">
     <header class="page__header header">
-      <div class="header__content">
-        <div class="header__top-actions top-actions">
-          <a href="#" class="top-actions__logo logo">
-            <img src="./images/logo.png" 
-                alt="Logo" 
-                class="logo__image">
-          </a>
-          <a href="#side-menu" class="icon icon--menu"></a>
-          
-          <ul class="menu">
-            <li class="menu__item">
-              <a href="#about" class="menu__item-link">About</a>
-            </li>
-            <li class="menu__item">
-              <a href="#features" class="menu__item-link">Features</a>
-            </li>
-            <li class="menu__item">
-              <a href="#how-to-use" class="menu__item-link">How to use</a>
-            </li>
-            <li class="menu__item">
-              <a href="#download" class="menu__item-link">Download</a>
-            </li>
-          </ul>
+      <div class="header__content content">
+        <div class="container">
+          <div class="header__top-actions top-actions">
+            <a href="#" class="top-actions__logo logo">
+              <img src="./images/logo.png" 
+                  alt="Logo" 
+                  class="logo-image">
+            </a>
+            <a href="#side-menu" class="icon icon--menu"></a>
+            
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="#about" class="menu__item-link">About</a>
+              </li>
+              <li class="menu__item">
+                <a href="#features" class="menu__item-link">Features</a>
+              </li>
+              <li class="menu__item">
+                <a href="#how-to-use" class="menu__item-link">How to use</a>
+              </li>
+              <li class="menu__item">
+                <a href="#download" class="menu__item-link">Download</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="header-main-info">
-          <div class="header-main-info__user">
-            <h1 class="header-main-info__title">
-              Momentum
-            </h1>
-            <h2 class="header-main-info__subtitle">
-              Launch your product — and savor the momentum.
-            </h2>
-            <a href="#" class="button">
-               Get the App
-            </a>
+          <div class="container">
+            <div class="grid grid--desktop grid--center">     
+              <div class="grid__item grid__item--1-7">
+                <div class="header-main-info__user">
+                  <h1 class="header-main-info__title">
+                    Momentum
+                  </h1>
+                  <h2 class="header-main-info__subtitle">
+                    Launch your product — and savor the momentum.
+                  </h2>
+                  <a href="#" class="button">
+                    Get the App
+                  </a>
+                </div>
+              </div>
+              <div class="grid__item grid__item--8-12"> 
+                <img src="./images/header-image.svg" 
+                    alt="Header image" 
+                    class="header-main-info__image">
+              </div>
+            </div>
           </div>
-          <img src="./images/header-image.svg" 
-               alt="Header image" 
-               class="header-main-info__image">
         </div>
-       
       </div>
     </header>
 
     <nav class="page__side-menu side-menu" id="side-menu">
-      <div class="side-menu__content">
-        <div class="side-menu__top-actions top-actions top-actions--side-menu">
-          <a href="#" class="logo">
-            <img src="./images/logo.png" 
-                 alt="Logo" 
-                 class="logo__image">
-          </a>
-          <a href = "#" 
-              class="top-actions__icon icon icon--cross"
-          ></a>
+      <div class="container">
+        <div class="side-menu__content">
+          <div class="side-menu__top-actions top-actions top-actions--side-menu">
+            <a href="#" class="logo">
+              <img src="./images/logo.png" 
+                   alt="Logo" 
+                   class="logo-image logo-image--side-menu">
+            </a>
+            <a href = "#" 
+                class="top-actions__icon icon icon--cross"
+            ></a>
+          </div>
+        
+          <ul class="side-menu__list">
+            <li class="side-menu__item">
+              <a href="#about-us" class="side-menu__link">About</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#services" class="side-menu__link">Features</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#testimonials" class="side-menu__link">How to use</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#contact-us" class="side-menu__link">Download</a>
+            </li>
+          </ul>
         </div>
-      
-        <ul class="side-menu__list">
-          <li class="side-menu__item">
-            <a href="#about-us" class="side-menu__link">About</a>
-          </li>
-          <li class="side-menu__item">
-            <a href="#services" class="side-menu__link">Features</a>
-          </li>
-          <li class="side-menu__item">
-            <a href="#testimonials" class="side-menu__link">How to use</a>
-          </li>
-          <li class="side-menu__item">
-            <a href="#contact-us" class="side-menu__link">Download</a>
-          </li>
-        </ul>
       </div>
     </nav>
     
     <div class="page__orders orders">
-      <div class="orders__container">
-        <h4 class="subtitle">
-        Aenean Consectetur Porta
-        </h4>
-        <p class="subtitle subtitle--bold subtitle--white">
-          Nullam quis risus eget urna mollis <br>
-          ornare vel eu leo.
-        </p>
-        <div class="orders__container-image">
-          <img src="./images/black-screen-image.png" 
-              class="orders__image"
-              alt="Orders">
+      <div class="container">
+        <div class="orders__container">
+          <h4 class="subtitle">
+          Aenean Consectetur Porta
+          </h4>
+          <p class="subtitle subtitle--bold subtitle--white">
+            Nullam quis risus eget urna mollis <br>
+            ornare vel eu leo.
+          </p>
+          <div class="orders__container-image">
+            <img src="./images/black-screen-image.png" 
+                class="orders__image"
+                alt="Orders">
+          </div>
         </div>
       </div>
+      
     </div>
+
     <section class="page__section how-to-use" id="how-to-use">
       <div class="how-to-use__item use-item">
         <div class="use-item__info">
@@ -211,67 +226,74 @@
     </div>
 
     <section class="page__section about" id="about">
-      <div class="about__item about-item">
-        <div class="about-item__info">
-          <h4 class="subtitle">Aenean Consectetur Porta</h4>
-          <h2 class="subtitle subtitle--bold">
-            Sem Risus Elit<br> 
-            Vestibulum
-          </h2>
-          <p class="subtitle subtitle--text">Nulla vitae elit libero, a pharetra augue. Duis <br>
-            mollis, est non commodo luctus, nisi erat <br>
-            porttitor ligula, eget lacinia odio sem nec elit.<br> 
-            <a href="#" class="subtitle subtitle--text">Cras mattis consectetur</a> purus sit amet<br>
-            fermentum. Donec id elit non mi porta <br>
-            gravida at eget metus. Etiam porta sem <br>
-            malesuada magna mollis euismod.
-          </p>
+      <div class="container">
+        <div class="about__item about-item">
+          <div class="about-item__info">
+            <h4 class="subtitle">Aenean Consectetur Porta</h4>
+            <h2 class="subtitle subtitle--bold">
+              Sem Risus Elit<br> 
+              Vestibulum
+            </h2>
+            <p class="subtitle subtitle--text">Nulla vitae elit libero, a pharetra augue. Duis <br>
+              mollis, est non commodo luctus, nisi erat <br>
+              porttitor ligula, eget lacinia odio sem nec elit.<br> 
+              <a href="#" class="subtitle subtitle--text">Cras mattis consectetur</a> purus sit amet<br>
+              fermentum. Donec id elit non mi porta <br>
+              gravida at eget metus. Etiam porta sem <br>
+              malesuada magna mollis euismod.
+            </p>
+          </div>
+  
+          <div class="about-item__image-container">
+            <img src="./images/about-1.jpg" 
+                 alt="Burgers" 
+                 class="about-item__image">
+          </div>
         </div>
-
-        <div class="about-item__image-container">
-          <img src="./images/about-1.jpg" 
-               alt="Burgers" 
-               class="about-item__image">
-        </div>
-      </div>
-
-      <div class="about__item about-item">
-        <div class="about-item__image-container about-item__image-container--second">
-          <img src="./images/about-2.jpg"
-               alt="Sandwich" 
-               class="about-item__image">
-        </div>
-        <div class="about-item__info about-item__info--second">
-          <h4 class="subtitle">Aenean Consectetur Porta</h4>
-          <h2 class="subtitle subtitle--bold">
-            Parturient Tortor
-          </h2>
-          <p class="subtitle subtitle--text">Nulla vitae elit libero, a pharetra augue. Duis <br>
-            mollis, est non commodo luctus, nisi erat <br>
-            porttitor ligula, eget lacinia odio sem nec elit.<br> 
-            <a href="#" class="subtitle subtitle--text">Cras mattis consectetur</a> purus sit amet<br> 
-            fermentum. Donec id elit non mi porta <br>
-            gravida at eget metus. Etiam porta sem <br>
-            malesuada magna mollis euismod.
-          </p>
+  
+        <div class="about__item about-item">
+          <div class="about-item__image-container about-item__image-container--second">
+            <img src="./images/about-2.jpg"
+                 alt="Sandwich" 
+                 class="about-item__image">
+          </div>
+          <div class="about-item__info about-item__info--second">
+            <h4 class="subtitle">Aenean Consectetur Porta</h4>
+            <h2 class="subtitle subtitle--bold">
+              Parturient Tortor
+            </h2>
+            <p class="subtitle subtitle--text">Nulla vitae elit libero, a pharetra augue. Duis <br>
+              mollis, est non commodo luctus, nisi erat <br>
+              porttitor ligula, eget lacinia odio sem nec elit.<br> 
+              <a href="#" class="subtitle subtitle--text">Cras mattis consectetur</a> purus sit amet<br> 
+              fermentum. Donec id elit non mi porta <br>
+              gravida at eget metus. Etiam porta sem <br>
+              malesuada magna mollis euismod.
+            </p>
+          </div>
         </div>
       </div>
     </section>
+
     <div class="page__quote quote">
-      <img src="./images/quotes.svg" 
+      <div class="container">
+        <img src="./images/quotes.svg" 
            alt="Quote" 
            class="quote__image">
-      <p class="quote__text">
-        HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est <br>
-        non commodo luctus, nisi erat porttitor ligula, eget lacinia odio <br>
-        sem nec elit. Pus sit amet fermentum. Donec id elit non mi porta <br>
-        gravida at eget metus. Etiam porta sem malesuada magna <br>
-        mollis euismod.ing
-      </p>
-      <h6 class="quote__sourse">
-        Joshua Home - New York Times
-      </h6>
+
+        <p class="quote__text">
+          HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est <br>
+          non commodo luctus, nisi erat porttitor ligula, eget lacinia odio <br>
+          sem nec elit. Pus sit amet fermentum. Donec id elit non mi porta <br>
+          gravida at eget metus. Etiam porta sem malesuada magna <br>
+          mollis euismod.ing
+        </p>
+        <h6 class="quote__sourse">
+          Joshua Home - New York Times
+        </h6>
+      </div>
     </div>
+
     <div class="page__partners partners">
       <a href="https://webflow.com/"
          target="_blank"
@@ -304,36 +326,43 @@
              class="partners__logo">
       </a>
     </div>
+
     <img src="./images/bottom-image.png" alt="Bottom image" 
          class="bottom-image">
 
     <section class="ready-start" id="download">
-      <div class="ready-start__content">
-        <h2 class="ready-start__title subtitle subtitle--bold subtitle--white">Ready to get started?</h2>
-        <div class="ready-start__buttons">
-          <a href="#" class="ready-start__download button">Download Now</a>
-          <a href="#" class="ready-start__get-in-touch button">Get in Touch</a>
+      <div class="container">
+        <div class="ready-start__content">
+          <h2 class="ready-start__title subtitle subtitle--bold subtitle--white">Ready to get started?</h2>
+          <div class="ready-start__buttons">
+            <a href="#" class="ready-start__download button">Download Now</a>
+            <a href="#" class="ready-start__get-in-touch button">Get in Touch</a>
+          </div>
         </div>
       </div>
     </section>
+
     <section class="contact-us">
-      <div class="contact-us__content">
-        <h2 class="subtitle subtitle--bold subtitle--white">
-        Get updates from Richard
-        </h2>
-        <p class="contact-us__text subtitle subtitle--text">
-          New course alerts, discounts and free lessons
-        </p>
-        <form action="#" class="contact-us__form">
-          <input autocomplete = "off" 
-                 type="email" 
-                 required name="form[]" 
-                 placeholder = "Enter your email" 
-                 class="contact-us__input">
-          <button type="submit" class="contact-us__button">Subscribe</button>
-        </form>
-      </div>
+      <div class="container">
+        <div class="contact-us__content">
+          <h2 class="subtitle subtitle--bold subtitle--white">
+          Get updates from Richard
+          </h2>
+          <p class="contact-us__text subtitle subtitle--text">
+            New course alerts, discounts and free lessons
+          </p>
+          <form action="#" class="contact-us__form">
+            <input autocomplete = "off" 
+                   type="email" 
+                   required name="form[]" 
+                   placeholder = "Enter your email" 
+                   class="contact-us__input">
+            <button type="submit" class="contact-us__button">Subscribe</button>
+          </form>
+        </div>
+      </div>  
     </section>
+
     <footer class="footer">
       <div class="footer__content">
         <img src="./images/footer-logo.svg" 
