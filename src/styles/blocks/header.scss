@@ -15,10 +15,7 @@
       width: max-content;
       margin: 0 auto;
     }
-
-    @include onMobile {
-    }
-
+    
     @include onSmallScreen {
       padding: 15px 0 35px;
     }
