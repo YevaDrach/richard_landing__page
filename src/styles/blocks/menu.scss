@@ -1,6 +1,10 @@
 .menu {
   display: flex;
   padding: 0;
+
+  @include onSuperSmallScreen {
+    display: none;
+  }
   
   &__item {
     list-style: none;
